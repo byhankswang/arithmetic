@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-
+/*---------list---------*/
 struct list_node
 {
     int data;
@@ -11,8 +11,23 @@ struct list_node
 
 typedef struct list_node list_single;
 
-list_single * 
- 
+list_single * create_list_node(int len)
+{
+
+    list_single * node = NULL;
+    node = (list_single *) malloc(sizeof(list_single) * len);
+    
+    for(int i = 0; i < len; i++)
+    {
+        memset(node, 0 sizeof(list_single));
+    }
+
+    return node;
+}	
+
+
+
+
 int main( )
 {
     int counter = 0;
