@@ -26,7 +26,26 @@ list_single * create_list_node(int len)
 }	
 
 
+/*--------bubble sort---------*/
+int bubble_sort(int len, int a[])
+{
 
+    for(int i = 0; i < len; i++ )
+    {
+    
+        for(int j = 0; j < len - 1 - i; j++)
+	{
+	
+            if(a[j] > a[j+1])
+            {
+	    
+	        int tmp = a[j];
+		a[j] = a[j+1];
+		a[j+1] = tmp;
+	    }
+	}
+    }
+}
 
 int main( )
 {
