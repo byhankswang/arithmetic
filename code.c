@@ -126,3 +126,22 @@ int main( )
      
     return 0;
 }
+
+/* nowcoder stander input
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+
+
+    //print("\n", );
+    return 0;
+}
+
+
+
+
+*/
